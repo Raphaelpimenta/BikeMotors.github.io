@@ -1,0 +1,131 @@
+.bike {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    padding: 60px;
+    height: 100vh;
+}
+
+.bikes-teste-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bikes-teste-img li {
+    flex: 1;
+    min-width: 200px;
+}
+
+.bikes-teste-img li:first-child {
+    min-width: 100%;
+}
+
+.bike-infos {
+    display: block;
+    height: 100vh;
+}    
+
+
+.bike-infos section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.bike-infos section p {
+    margin-bottom: 20px;
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+.bike-infos section a {
+    display: inline-block;
+    padding: 16px 32px;
+    background-color: #f2a50f;
+    border-radius: 4px;
+    box-shadow: 0 1px rgba(0, 0, 0, .1);
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.125rem;
+    font-weight: 600;
+    max-width: max-content;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.bike-infos .bike-ficha {
+    padding: 32px;
+    background-color: black;
+    border-radius: 4px;
+    color: gray;
+    margin-bottom: 40px;
+}
+
+.bike-ficha li {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+.bike-ficha span {
+    color: #9c9c9c;
+}
+
+.js-content section {
+    display: none;
+}
+
+.js-content section.ativo {
+    display: block !important;
+    animation: show .5s forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translate3d(30px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@media (max-width: 1050px) {
+    .bikes-teste-img{
+        height: 850px;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width: 750px){
+    .bike {
+        grid-template-columns: 1fr;
+        gap: 8rem 0rem;
+        padding: 50px 0px;
+    }
+
+    .bikes-teste-img {
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .bikes-teste-img {
+        height: 100vh;
+        margin-top: 10rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .bikes-teste-img{
+        height: 350px;
+    }
+
+    .bike-infos {
+        margin-bottom: 10rem;
+    }
+}

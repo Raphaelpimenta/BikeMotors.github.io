@@ -1,0 +1,83 @@
+.faq {
+    margin: 120px 0;
+}
+
+.faq h1 {
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+.faq-list div {
+    border-radius: 4px;
+}
+
+.faq-list div:nth-child(odd) {
+    background-color: #ededed;
+}
+
+.faq-list button{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    cursor: pointer;
+    background: none;
+    border: none;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.025rem;
+    padding: 20px;
+}
+
+
+.faq-list button::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+    background: #f2a50f;
+}
+
+.faq-list button::after {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 8px;
+    background: url('../../img/seta-abrir.svg') no-repeat;
+    transition: 0.3s;
+}
+
+
+.faq-list button:hover:after{
+    transform: rotate(180deg);
+}
+.faq-list dt.ativo::after{
+    transform: rotate(180deg);
+}
+
+.faq-list dd {
+    display: none;
+    padding: 16px 20px;
+    max-width: 80ch;
+}
+
+
+.faq-list dd.ativo {
+    display: block;
+    animation: slideDown .5s forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+
+    to {
+        opacity: 1;
+        max-height: 200px;
+    }
+}

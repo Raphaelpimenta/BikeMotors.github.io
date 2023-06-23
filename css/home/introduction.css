@@ -1,0 +1,141 @@
+.introducao-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-image: url('./../../img/capa.jpg');
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+}
+
+.introducao-bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.introducao {
+    padding: 10rem 4rem 4rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.intro-texto {
+    color: white;
+    text-align: center;
+
+}
+
+.intro-texto h1 {
+    font-size: 6rem;
+    line-height: 40px;
+    margin-bottom: 10px;
+    /* position: relative; */
+}
+
+.intro-texto h1 span{
+    font-size: 4rem;
+}
+
+/* .intro-texto h1::before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+} */
+
+
+.intro-texto p {
+    color: #f2a50f;
+    letter-spacing: 5px;
+    font-weight: 600;
+    margin-left: 110px;
+}
+
+.intro-texto .sub-titulo {
+    display: block;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin: 20px 0px;
+    position: relative;
+    color: #f2a50f;
+}
+
+.intro-texto .sub-titulo::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1.5px;
+    background-color: #f2a50f;
+    position: absolute;
+    bottom: 10px;
+    left: 23rem;
+}
+
+.introducao-conteudo a {
+    color: #c7c7cc;
+    display: block;
+    text-align: center;
+}
+
+@media (max-width: 1200px){
+    .intro-texto .sub-titulo::before {
+        content: '';
+        display: none;
+    }
+
+}
+
+@media (max-width: 950px){
+    /* .introducao {
+        grid-template-columns: 1fr;
+    } */
+
+    .introducao-conteudo {
+        margin-bottom: 50px;
+        display: grid;
+        justify-items: center;
+    }
+
+    .intro-texto {
+        text-align: center;
+    }
+
+    
+    .introducao-img{
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .introducao {
+        padding: 10rem 2rem;
+    }
+
+    .intro-texto h1 {
+        font-size: 4rem;
+        margin-bottom: 10px;
+    }
+
+    .intro-texto p {
+        margin-left: 0px;
+        margin-bottom: 15px;
+    }
+    
+    .intro-texto h1 span{
+        font-size: 3rem;
+    }
+
+    .intro-texto .sub-titulo {
+        margin-left: 0px;
+    }
+}

@@ -1,0 +1,12 @@
+@import './global/reset.css';
+@import './global/componentes.css';
+@import './global/animaScroll.css';
+@import './global/modal.css';
+
+/* HOME */
+@import './home/header.css';
+@import './home/introduction.css';
+@import './home/bike.css';
+@import './home/about.css';
+@import './home/accordion.css';
+@import './home/footer.css';
