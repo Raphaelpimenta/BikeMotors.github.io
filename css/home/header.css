@@ -22,6 +22,7 @@
 
 .logo {
     display: flex;
+    gap: 10px;
     align-items: center;
 
 }
@@ -53,7 +54,7 @@
     display: block;
     width: 0px;
     height: 2px;
-    background-color: #fff;
+    background-color: #f2a50c;
     margin-top: 4px;
     transition: 0.3s;
     position: absolute;
@@ -84,7 +85,7 @@
 }
 
 .header-bg.ativo .header {
-    margin-top: 0px;
+    margin-top: 15px;
     transition: all 1s;
 }
 
@@ -93,7 +94,7 @@
         display: block;
         position: absolute;
         width: 100%;
-        top: 100px; /*Posição entre o menu e o navbar*/
+        top: 100px;
         right: 0px;
         text-align: center;
         transition: .4s;
