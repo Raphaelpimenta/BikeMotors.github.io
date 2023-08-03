@@ -11,12 +11,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    cursor: pointer;
 }
 
 .bikes-img li {
     flex: 1;
     min-width: 200px;
+    cursor: pointer;
 }
 
 .bikes-img li:first-child {
