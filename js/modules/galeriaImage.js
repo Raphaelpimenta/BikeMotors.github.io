@@ -1,6 +1,6 @@
 export default function galeriaImage(){
-    const containerGaleria = document.querySelector('.bikes-teste-img')
-    const galeria = document.querySelectorAll('.bikes-teste-img li')
+    const containerGaleria = document.querySelector('.bikes-img')
+    const galeria = document.querySelectorAll('.bikes-img li')
 
     function changeImage(event){
         const img = event.currentTarget
