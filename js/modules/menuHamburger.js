@@ -14,4 +14,5 @@ export default function menuHamburguer(){
 
     menuMobile.addEventListener('click', ativaMenu)
     menuMobile.addEventListener('touchstart', ativaMenu)
+    document.addEventListener('scrollDone', ativaMenu)
 }
